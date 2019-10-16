@@ -1,8 +1,8 @@
 import React from 'react';
 
-function SearchBox() {
+function SearchBox(props) {
   return (
-   <input className="search" type="text" placeholder="search any movie"/>
+   <input ref = {props.ref}className="search" type="text" placeholder="search any movie"/>
   );
 }
 

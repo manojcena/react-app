@@ -40,6 +40,10 @@
   margin: 16px;
   padding: 8px;
 }
+.sort-button{
+  margin: 0px;
+  padding: 10px;
+}
 
 .movie-collection{
   display: flex;
@@ -70,4 +74,10 @@
   background: #424242;
   color: white;
   border: none;
+}
+.sort-section{
+  display: flex;
+  background: #424242;
+  justify-content: space-between;
+  padding: 0px 10px;
 }
