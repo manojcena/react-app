@@ -1,3 +1,7 @@
+**{
+  margin: 0px;
+  padding: 0px;
+}
 .App {
   text-align: center;
 }
@@ -19,4 +23,51 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+#root{
+  text-align: center;
+  background: #232323;
+}
+.search{
+  width: 1200px;  
+  padding: 10px;
+  background: #424242;
+  border: 0;
+}
+
+.search-button{
+  margin: 16px;
+  padding: 8px;
+}
+
+.movie-collection{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-collection > div{  
+  width: 350px;
+  justify-content: space-around;
+}
+
+.movie-logo{
+  width: 250px;
+    height: 350px;
+}
+.text-color{
+  color: #555555;
+}
+.text-color-white{
+  color: #ffffff;
+}
+.button-color-red{
+  background: #F65261;
+    color: white;
+    border: none;
+}
+.button-color-hash {
+  background: #424242;
+  color: white;
+  border: none;
 }
