@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './Button';
+import Button from '../../Components/Button/Button';
 function section(props) {
   return (
     <h3 className="text-color-white">{props.sectionDetails.type}

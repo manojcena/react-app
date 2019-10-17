@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import SearchBox from './SearchBox';
-import MOVIE from './Movie';
-import Button from './Button';
+import MOVIE from '../Components/Movie/Movie';
+import Button from '../Components/Button/Button';
+import Section from '../Components/Section/section';
 import * as lodash from 'lodash';
-import Section from './section';
+import ErrorBoundaries from '../Components/ErrorBoundaries/ErrorBoundaries'
 class App extends Component {
   constructor() {
     super();
@@ -93,9 +93,11 @@ class App extends Component {
           <h3 className="text-color-white"> {this.state.movies.length} Movies Found</h3>
           <Section sectionDetails={sortSection}></Section>
         </div>
-        <div className="movie-collection">
-          {this.state.movies.map(movie => <MOVIE key={movie.id} movieDetails={movie}></MOVIE>)}
-        </div>
+        <ErrorBoundaries>
+          <div className="movie-collection">
+            {this.state.movies.map(movie => <MOVIE key={movie.id} movieDetails={movie}></MOVIE>)}
+          </div>
+        </ErrorBoundaries>
       </div>
     );
   }
